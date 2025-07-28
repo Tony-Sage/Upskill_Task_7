@@ -1,0 +1,180 @@
+body {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: 100vh;
+ width: 100vw;
+ background: url('images/background.jpg') no-repeat fixed center;
+ background-size: cover;
+}
+
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ padding: 0.5rem 1rem;
+ box-sizing: border-box;
+}
+
+header div {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 1rem;
+}
+
+main {
+ display: flex;
+ flex-direction: row-reverse;
+ justify-content: space-evenly;
+ width: 100%;
+ height: 100%;
+ padding: 0.5rem;
+ margin-top: 0.5rem;
+ margin-bottom: 8rem;
+}
+
+#cart-section {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 30%;
+ height: 100%;
+ box-sizing: border-box;
+}
+
+#cartDisplay {
+ height: 60%;
+ width: 90%;
+ background: #ffff88;
+ border: 3px;
+ border-radius: 2rem;
+ overflow: scroll;
+ padding: 1rem;
+}
+
+#button-div {
+ display: flex;
+ justify-content: center;
+ gap: 3rem;
+ margin: 1rem;
+}
+
+#showcase-section {
+ width: 70%;
+ box-sizing: border-box;
+ padding: 2rem;
+}
+
+.headings {
+ text-align: center;
+}
+
+#showCase {
+ display: flex;
+ gap: 4rem;
+ justify-content: center;
+ flex-wrap: wrap;
+ overflow: scroll;
+ height: 100%;
+}
+
+.menu-card {
+ height: auto;
+ width: 20vw;
+ padding: 1rem;
+ overflow: hidden;
+ background: #ffff66;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-evenly;
+ border: 2px solid red;
+ border-radius: 2rem;
+ text-align: justify;
+ font-weight: bold;
+}
+
+.menu-card:hover {
+ transform: scale(1.1);
+ background: #ffff00;
+ border: 2px solid white;
+}
+
+img {
+ height: 10rem;
+ width: 12rem;
+}
+
+.price {
+ color: white;
+ text-shadow: 1.5px 1.5px 1px #000;
+}
+
+button {
+ background: red;
+ border-radius: 1rem;
+ color: white;
+ font-weight: 200%;
+}
+
+button:hover {
+ background: white;
+ color: black;
+}
+
+button:click {
+ background: purple;
+ color: white;
+}
+
+button {
+ width: 6rem;
+ height: 2rem;
+}
+
+footer {
+ display: flex;
+ justify-content: space-evenly;
+ gap: 4rem;
+ bottom: 0;
+}
+
+.footerImg {
+ height: 2rem;
+ width: 2rem
+}
+
+ion-icon {
+ color: red;
+ height: 2rem;
+ width: 2rem;
+}
+
+@media (max-width: 450px){
+ 
+ #cart-section {
+  display: none;
+  width: 90%;
+ }
+ 
+ #showcase-section {
+  width: 100%;
+  padding: 1rem;
+ }
+ 
+.menu-card{
+ height: auto;
+ width: 20rem;
+ margin: 1rem;
+ padding: 0.5rem;
+}
+
+button {
+ background: red;
+ border-radius: 1rem;
+ color: white;
+ font-weight: 200%;
+}
+}
