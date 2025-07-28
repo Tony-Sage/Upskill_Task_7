@@ -173,5 +173,5 @@ function viewCart() {
   document.querySelector('#viewCart').textContent = "View Cart";
   document.querySelector('#cart-section').style.display = 'none';
   document.querySelector('#showcase-section').style.display = 'block';
-}
+ }
 }
