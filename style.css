@@ -150,6 +150,7 @@ ion-icon {
  color: red;
  height: 2rem;
  width: 2rem;
+ padding-bottom: 1rem;
 }
 
 @media (max-width: 450px){
