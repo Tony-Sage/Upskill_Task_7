@@ -47,7 +47,7 @@ let menuContainer = document.getElementById('showCase');
 let cartItems = JSON.parse(localStorage.getItem('cartItems')) || {};
 let cartList = document.getElementById('cartDisplay');
 
-// Render menu items
+// I'm rendering menu items here
 menuList.forEach((item, index) => {
   menuContainer.innerHTML += `
     <div class="menu-card">
@@ -60,7 +60,7 @@ menuList.forEach((item, index) => {
   `;
 });
 
-// Event listeners for "Order Now" buttons
+// This is the event listeners for the "Order Now" buttons
 document.querySelectorAll(".orderButton").forEach(button => {
   button.addEventListener("click", function () {
     const item = menuList[this.dataset.index];
@@ -128,7 +128,7 @@ function clearCart() {
   updateCartUI();
 }
 
-// Handle Place Order
+// This place handles Place Order button
 document.querySelector("#submitOrder").addEventListener("click", function () {
   if (Object.keys(cartItems).length === 0) {
     alert("Your cart is empty. Please add items before submitting your order.");
@@ -139,7 +139,7 @@ document.querySelector("#submitOrder").addEventListener("click", function () {
   clearCart();
 });
 
-// Handle Print
+// This place handles Print button
 document.querySelector("#printOrder").addEventListener("click", function () {
   let printContent = "Your Order Summary:\n\n";
   let total = 0;
@@ -159,7 +159,7 @@ document.querySelector("#printOrder").addEventListener("click", function () {
   win.close();
 });
 
-// Restore cart on page load
+// This restores cart on page load
 updateCartUI();
 
 document.querySelector('#viewCart').addEventListener("click", viewCart)
