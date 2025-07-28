@@ -161,3 +161,17 @@ document.querySelector("#printOrder").addEventListener("click", function () {
 
 // Restore cart on page load
 updateCartUI();
+
+document.querySelector('#viewCart').addEventListener("click", viewCart)
+
+function viewCart() {
+ if (document.querySelector('#viewCart').textContent === "View Cart"){
+  document.querySelector('#viewCart').textContent = "Go Back";
+  document.querySelector('#cart-section').style.display = 'flex';
+  document.querySelector('#showcase-section').style.display = 'none';
+ } else if (document.querySelector('#viewCart').textContent === "Go Back") {
+  document.querySelector('#viewCart').textContent = "View Cart";
+  document.querySelector('#cart-section').style.display = 'none';
+  document.querySelector('#showcase-section').style.display = 'block';
+}
+}
